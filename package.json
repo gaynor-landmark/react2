@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "watchify src/index.js -o public/bundle.js -t [ babelify --presets [ es2015 react stage-0 ] ] -dv",
     "dev:live-reload": "live-reload public/ --port 3000 --delay=1000",
+    "createDB": "node ./data/createDB.js",
     "start": "nodemon server/index.js"
   },
   "dependencies": {
@@ -23,7 +24,6 @@
     "npm-run-all": "^1.5.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
-    "react-marked": "^0.3.1",
     "react-router": "^2.0.0",
     "serve-favicon": "~2.3.0",
     "sqlite3": "^3.1.1"
